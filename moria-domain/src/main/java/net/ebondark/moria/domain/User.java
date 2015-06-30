@@ -1,6 +1,6 @@
-package net.wmlabs.moria.domain;
+package net.ebondark.moria.domain;
 
-import net.wmlabs.moria.domain.utils.Length;
+import net.ebondark.moria.domain.utils.Length;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;

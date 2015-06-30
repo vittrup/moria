@@ -1,14 +1,14 @@
-package net.wmlabs.moria.repository;
+package net.ebondark.moria.repository;
 
-import net.wmlabs.moria.domain.Authority;
+import net.ebondark.moria.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * Repository to manage {@link net.wmlabs.moria.domain.Authority} instances.
+ * Repository to manage {@link User} instances.
  *
  * @author Kenneth Vittrup
  */
-public interface AuthorityRepository extends JpaRepository<Authority, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     /**
      * Returns a page of {@link net.wmlabs.moria.domain.Customer}s with the given lastname.

@@ -1,4 +1,4 @@
-package net.wmlabs.moria.domain.utils;
+package net.ebondark.moria.domain.utils;
 
 public interface Sequence {
 

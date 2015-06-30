@@ -3,8 +3,8 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
     <persistence-unit name="spring-jpa">
-        <class>net.wmlabs.moria.domain.User</class>
-        <class>net.wmlabs.moria.domain.Authority</class>
+        <class>net.ebondark.moria.domain.User</class>
+        <class>net.ebondark.moria.domain.Authority</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" />
         </properties>

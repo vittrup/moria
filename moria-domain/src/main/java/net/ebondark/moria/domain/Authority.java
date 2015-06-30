@@ -1,11 +1,9 @@
-package net.wmlabs.moria.domain;
+package net.ebondark.moria.domain;
 
-import net.wmlabs.moria.domain.utils.Length;
-import net.wmlabs.moria.domain.utils.Sequence;
+import net.ebondark.moria.domain.utils.Length;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
-import javax.naming.Name;
 import javax.persistence.*;
 
 @Entity

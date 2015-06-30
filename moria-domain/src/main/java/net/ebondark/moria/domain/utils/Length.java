@@ -1,4 +1,4 @@
-package net.wmlabs.moria.domain.utils;
+package net.ebondark.moria.domain.utils;
 
 /**
  * Interface with entity's attributes length.
