@@ -1,4 +1,4 @@
-package net.ebondark.moria.repository;
+package net.ebondark.moria.repositories;
 
 import net.ebondark.moria.domain.User;
 import org.junit.After;
@@ -17,30 +17,30 @@ import static junit.framework.Assert.assertEquals;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationContext-repositories.xml"})
-public class UserRepositoryTest {
+public class RepositoriesManagerTest {
 
     @Autowired
-    UserRepository userRepository;
+    RepositoriesManager repositoriesManager;
 
     @Before
     public void init() {
-        userRepository.deleteAll();
+        repositoriesManager.getUserRepository().deleteAll();
     }
 
     @After
     public void reset() {
-        userRepository.deleteAll();
+        repositoriesManager.getUserRepository().deleteAll();
     }
 
 
     @Test
     public void createSimpleCustomer() {
-        assertEquals("Unexpected log message", userRepository.count(), 0);
+        assertEquals("Unexpected log message", repositoriesManager.getUserRepository().count(), 0);
         User user = new User();
         user.setUsername("KENNETH");
         user.setPassword("VITTRUP");
         user.setEnabled(true);
-        userRepository.save(user);
-        assertEquals("Unexpected log message", userRepository.count(), 1);
+        repositoriesManager.getUserRepository().save(user);
+        assertEquals("Unexpected log message", repositoriesManager.getUserRepository().count(), 1);
     }
 }
